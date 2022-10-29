@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">⚡️Convertor toLowerCase and toUpperCase</h2>
+      <label class="text">Enter any string</label>
+      <input type="text" id="text1" onkeyup="upper()" />
+      <label class="text">Enter any string</label>
+      <input type="text" id="text2" onkeyup="lower()" />
+    </div>
+
+    <script>
+      function upper() {
+        var text = document.getElementById("text1");
+        text.value = text.value.toUpperCase();
+      }
+      function lower() {
+        var text = document.getElementById("text2");
+        text.value = text.value.toLowerCase();
+      }
+    </script>
+  </body>
+</html>
